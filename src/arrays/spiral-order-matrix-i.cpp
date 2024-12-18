@@ -26,11 +26,13 @@ vector<int> solveSpiralOrder(const vector<vector<int> >& A) {
         }
         ce--;
 
+        if (rs > re) break;
         for (int i=ce; i>=cs; i--) {
             spiralOrder.push_back(A[re][i]);
         }
         re--;
 
+        if (cs > ce) break;
         for (int i=re; i>=rs; i--) {
             spiralOrder.push_back(A[i][cs]);
         }

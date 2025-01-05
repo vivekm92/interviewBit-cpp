@@ -9,12 +9,12 @@ using namespace std;
     LC : https://leetcode.com/problems/validate-binary-search-tree/description/
 */
 
+/********************************************************************************/
 struct node {
     TreeNode* A;
     long lb, ub;
     node(TreeNode* B): A(B), lb(numeric_limits<long>::min()), ub(numeric_limits<long>::max()) {}
 };
-
 
 // Optimised Approach 3:
 // T(n) : O(n) ; S(n) : O(h), n -> number of nodes, h -> height of tree

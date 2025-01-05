@@ -8,6 +8,7 @@ using namespace std;
 	LC : https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/
 */
 
+/********************************************************************************/
 // Optimised Approach 1:
 // T(n) : O(n) ; S(n) : O(n)
 TreeNode* solveSortedArrayToBalancedBst(const vector<int>& A, int l, int r) {
@@ -26,7 +27,7 @@ TreeNode* solveSortedArrayToBalancedBst(const vector<int>& A, int l, int r) {
 TreeNode* sortedArrayToBalancedBst(const vector<int>& A) {
 	return solveSortedArrayToBalancedBst(A, 0, A.size() - 1);
 }
-/*************s*******************************************************************/
+/********************************************************************************/
 
 // Driver Code for testing
 int main() {

@@ -13,7 +13,7 @@ struct BinaryTreeNode {
     std::unique_ptr<BinaryTreeNode<T> > left, right;
 };
 
-template <typename T>
+template<typename T>
 struct BSTNode {
     T data;
     std::unique_ptr<BSTNode<T> > left, right;
